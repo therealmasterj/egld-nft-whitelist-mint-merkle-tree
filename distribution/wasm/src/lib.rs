@@ -7,8 +7,10 @@
 elrond_wasm_node::wasm_endpoints! {
     distribution
     (
-        add
-        getSum
+        getClaimStatus
+        getEpochRoot
+        getTokenId
+        set_epoch_root
     )
 }
 
