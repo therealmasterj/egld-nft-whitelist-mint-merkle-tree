@@ -1,5 +1,5 @@
 {
-    "name": "distribution",
+    "name": "contract",
     "comment": "add then check",
     "gasSchedule": "v3",
     "steps": [
@@ -24,7 +24,7 @@
             "id": "1",
             "tx": {
                 "from": "address:owner",
-                "contractCode": "file:../output/distribution.wasm",
+                "contractCode": "file:../output/contract.wasm",
                 "arguments": [
                     "5"
                 ],
@@ -91,7 +91,7 @@
                     "storage": {
                         "str:sum": "8"
                     },
-                    "code": "file:../output/distribution.wasm"
+                    "code": "file:../output/contract.wasm"
                 }
             }
         }

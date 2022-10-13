@@ -1,4 +1,4 @@
-use distribution::*;
+use contract::*;
 use elrond_wasm::types::BigUint;
 use elrond_wasm_debug::DebugApi;
 

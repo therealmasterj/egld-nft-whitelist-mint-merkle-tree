@@ -44,17 +44,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "distribution"
+name = "contract"
 version = "0.0.0"
 dependencies = [
  "elrond-wasm",
 ]
 
 [[package]]
-name = "distribution-wasm"
+name = "contract-wasm"
 version = "0.0.0"
 dependencies = [
- "distribution",
+ "contract",
  "elrond-wasm-node",
  "elrond-wasm-output",
 ]

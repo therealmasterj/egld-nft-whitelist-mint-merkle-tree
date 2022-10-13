@@ -1,5 +1,5 @@
 [package]
-name = "distribution-meta"
+name = "contract-meta"
 version = "0.0.0"
 edition = "2018"
 publish = false
@@ -7,7 +7,7 @@ authors = [ "you",]
 
 [dev-dependencies]
 
-[dependencies.distribution]
+[dependencies.contract]
 path = ".."
 
 [dependencies.elrond-wasm-debug]

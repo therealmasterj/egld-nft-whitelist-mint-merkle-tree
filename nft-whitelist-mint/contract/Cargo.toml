@@ -1,5 +1,5 @@
 [package]
-name = "distribution"
+name = "contract"
 version = "0.0.0"
 authors = [ "you",]
 edition = "2018"

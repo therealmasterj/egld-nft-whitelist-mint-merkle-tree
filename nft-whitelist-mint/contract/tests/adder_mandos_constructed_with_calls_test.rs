@@ -1,4 +1,4 @@
-use distribution::*;
+use contract::*;
 use elrond_wasm::storage::mappers::SingleValue;
 use elrond_wasm_debug::{mandos_system::model::*, num_bigint::BigUint, *};
 
