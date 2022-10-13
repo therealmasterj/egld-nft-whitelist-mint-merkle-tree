@@ -8,6 +8,7 @@
     "start": "ts-node index.ts"
   },
   "dependencies": {
+    "@elrondnetwork/erdjs": "^11.1.1",
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.32"
   },

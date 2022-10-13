@@ -80,6 +80,7 @@ pub trait NftWhitelistMintContract:
     }
 
     fn require_can_mint(&self) {
+        self.require_token_issued();
         require!(
             self.call_value().egld_value() == self.sale_price().get(),
             "Invalid amount provided"
@@ -93,9 +94,7 @@ pub trait NftWhitelistMintContract:
 
     fn mint(&self) {
         let token_id = self.next_token_id().get();
-        let mut token_id_managed_buffer = ManagedBuffer::new();
-        token_id_managed_buffer.append_u32_be(token_id);
-
+        let token_id_managed_buffer = sc_format!("{}", token_id);
         let nonce = self.create_nft_with_attributes(
             &self.build_token_name(&token_id_managed_buffer),
             NftAttributes {

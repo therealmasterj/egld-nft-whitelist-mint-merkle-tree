@@ -50,7 +50,7 @@ pub trait OwnerModule:
     #[endpoint(togglePrivateSale)]
     fn toggle_private_sale(&self, state: bool) {
         require!(
-            self.merkle_tree_root().is_empty(),
+            !self.merkle_tree_root().is_empty(),
             "Can't toggle private sale since MT root isn't set"
         );
 

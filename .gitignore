@@ -11,3 +11,5 @@
 trace*.scen.json
 
 **/node_modules/**
+
+**/wallets/**

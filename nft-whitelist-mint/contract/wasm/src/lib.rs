@@ -11,6 +11,7 @@ elrond_wasm_node::wasm_endpoints! {
         getBaseImageUri
         getBaseMetadataUri
         getBaseName
+        getLeaf
         getMaxSupply
         getMerkleTreeRoot
         getNextTokenId
