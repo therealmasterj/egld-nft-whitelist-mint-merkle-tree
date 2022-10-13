@@ -9,3 +9,5 @@
 
 # Mandos test trace
 trace*.scen.json
+
+**/node_modules/**
