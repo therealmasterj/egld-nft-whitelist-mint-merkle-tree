@@ -145,10 +145,3 @@ publicMint() {
         --value $SALE_PRICE \
         --send 
 }
-
-queryLeaf() {
-    erdpy contract query ${CONTRACT_ADDRESS} \
-        --function="getLeaf" \
-        --proxy=${PROXY} \
-        --arguments 0x7d33f549fcfb3e238e1106653f04800de1383a897550b03e9a87f86477156b2c
-}
